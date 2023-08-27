@@ -1,0 +1,859 @@
+@import url("https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Stardos Stencil", cursive;
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2.3vw 5.5vw;
+}
+.navbar > div:nth-child(1) > a > img {
+  width: 8vw;
+}
+.navbar > div:nth-child(2) > ul {
+  display: flex;
+  align-items: center;
+}
+.navbar > div:nth-child(2) > ul > li {
+  margin: 1.3vw 1.9vw;
+  padding: 1.3vw 1.9vw;
+  border-radius: 2.3vw;
+  list-style: none;
+}
+.navbar > div:nth-child(2) > ul > li > a {
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 1.8vw;
+  line-height: 2.4vw;
+  background: linear-gradient(to right, #1c9ce5, #183e9f);
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+.navbar > div:nth-child(2) > ul > li:hover {
+  background: linear-gradient(to right, #1c9ce5, #183e9f);
+}
+.navbar > div:nth-child(2) > ul > li:hover > a {
+  color: white;
+}
+.navbar > div:nth-child(3) > a {
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 1.8vw;
+  line-height: 2.4vw;
+  background: linear-gradient(to right, #1c9ce5, #183e9f);
+  color: white;
+  padding: 1.3vw 1.9vw;
+  border-radius: 2.3vw;
+}
+.navbar > div:nth-child(3) > a:hover {
+  box-shadow: inset 0px 3px 11px 2px rgba(0, 0, 0, 0.5);
+}
+
+.hero-section {
+  display: flex;
+  align-items: flex-start;
+  margin: 2.3vw 5.5vw;
+  gap: 4.3vw;
+}
+.hero-section > div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  gap: 2.3vw;
+}
+.hero-section > div:nth-child(1) > h1 {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 3.3vw;
+  line-height: 3.8vw;
+  text-transform: capitalize;
+  background: linear-gradient(to right, #1c9ce5, #183e9f);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+.hero-section > div:nth-child(1) > h1 > img {
+  width: 5vw;
+  margin: 0 1.1vw;
+}
+.hero-section > div:nth-child(1) > a > img {
+  width: 14vw;
+}
+.hero-section > div:nth-child(2) > h3 {
+  font-size: 1.9vw;
+  line-height: 3.8vw;
+  background: linear-gradient(to right, #1c9ce5, #183e9f);
+  white-space: nowrap;
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  font-weight: normal;
+}
+.hero-section > div:nth-child(2) > a {
+  background: linear-gradient(to right, #1c9ce5, #183e9f);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+
+.card-section {
+  margin: 2.3vw 5.5vw;
+  display: flex;
+  align-items: flex-end;
+  gap: 3vw;
+}
+.card-section > div:nth-child(1) {
+  background: #1c9ce5;
+  color: white;
+  border-radius: 2.3vw;
+  padding: 2.4vw 3vw;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5vw;
+}
+.card-section > div:nth-child(1) > h4 {
+  font-size: 2.3vw;
+  font-weight: normal;
+  text-align: center;
+  line-height: 2.8vw;
+}
+.card-section > div:nth-child(1) > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
+}
+.card-section > div:nth-child(1) > div > span {
+  font-size: 2.3vw;
+  line-height: 2.8vw;
+  background-color: white;
+  border-radius: 50%;
+  padding: 1vw;
+}
+.card-section > div:nth-child(2) {
+  background: #183e9f;
+  color: white;
+  display: flex;
+  padding: 2.4vw 3vw;
+  border-radius: 2.3vw;
+  flex-direction: column;
+  gap: 2.5vw;
+}
+.card-section > div:nth-child(2) > p:nth-child(1) {
+  font-size: 2vw;
+  line-height: 2.8vw;
+}
+.card-section > div:nth-child(2) > p:nth-child(2) {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.7vw;
+}
+.card-section > div:nth-child(2) > p:nth-child(2) > span {
+  background: white;
+  color: black;
+  border-radius: 2.3vw;
+  padding: 0.7vw 1.3vw;
+  font-size: 1.5vw;
+  line-height: 2.3vw;
+}
+.card-section > div:nth-child(2) > p:nth-child(2) > span:hover {
+  background: black;
+  color: white;
+}
+.card-section > div:nth-child(2) > div {
+  display: flex;
+  align-items: flex-end;
+  gap: 2.5vw;
+  position: relative;
+}
+.card-section > div:nth-child(2) > div > div:nth-child(1) > img {
+  width: 12vw;
+  rotate: 180deg;
+}
+.card-section > div:nth-child(2) > div > img {
+  width: 15vw;
+  transition: opacity 0.5s ease;
+}
+.card-section > div:nth-child(2) > div > div:nth-child(3) {
+  position: absolute;
+  bottom: -20%;
+  right: -6%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2vw;
+  background: white;
+  padding: 1vw 1.5vw;
+  border-radius: 2.3vw;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+}
+.card-section > div:nth-child(2) > div > div:nth-child(3) > h4 {
+  background: linear-gradient(to right, #1c9ce5, #183e9f);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+.card-section > div:nth-child(2) > div > div:nth-child(3) > h1 {
+  background: linear-gradient(to right, #1c9ce5, #183e9f);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  transition: opacity 0.5s ease;
+  font-size: 2.3vw;
+  line-height: 2.8vw;
+}
+.card-section > div:nth-child(2) > div > div:nth-child(3) > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.card-section > div:nth-child(2) > div > div:nth-child(3) > div > div {
+  cursor: pointer;
+  height: 1vw;
+  width: 1vw;
+  background: #a7a3a3;
+  border-radius: 50%;
+}
+.card-section > div:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: flex-start;
+}
+.card-section > div:nth-child(3) > div:nth-child(1) {
+  display: flex;
+  align-items: center;
+}
+.card-section > div:nth-child(3) > div:nth-child(1) > div {
+  overflow: hidden;
+  border-radius: 50%;
+}
+.card-section > div:nth-child(3) > div:nth-child(1) > div > img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  width: 6vw;
+  height: 6vw;
+}
+.card-section > div:nth-child(3) > div:nth-child(2) {
+  font-size: 2vw;
+  line-height: 2.6vw;
+  background: linear-gradient(to right, #1c9ce5, #183e9f);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  margin-top: 3vw;
+}
+.card-section > div:nth-child(3) > div:nth-child(2) > p > span {
+  font-weight: 600;
+}
+.card-section > div:nth-child(3) > div:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5vw;
+  background: black;
+  color: white;
+  transition-delay: 200ms;
+  padding: 1vw 1.5vw;
+  border-radius: 2.3vw;
+  margin-top: 10.32vw;
+}
+.card-section > div:nth-child(3) > div:nth-child(3) > h4 {
+  font-size: 2vw;
+  line-height: 2.8vw;
+}
+.card-section > div:nth-child(3) > div:nth-child(3) > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5vw;
+}
+.card-section > div:nth-child(3) > div:nth-child(3) > div > p {
+  font-size: 3vw;
+  line-height: 2.7vw;
+  font-weight: 700;
+}
+.card-section > div:nth-child(3) > div:nth-child(3) > div > p:nth-child(3) {
+  font-size: 2vw;
+  color: #a7a3a3;
+}
+.card-section > div:nth-child(3) > div:nth-child(3) > div > div {
+  display: flex;
+}
+.card-section > div:nth-child(3) > div:nth-child(3) > div > div > img {
+  width: 2vw;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.3vw;
+  justify-content: space-between;
+  margin: 2.3vw 5.5vw;
+  margin-top: 9.7vw;
+  margin-bottom: 9.7vw;
+  padding: 2.3vw 5.5vw;
+}
+.services > h1 {
+  font-size: 3.3vw;
+  line-height: 3.8vw;
+  background: linear-gradient(to right, #1c9ce5, #183e9f);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+.services > p {
+  font-size: 1.9vw;
+  line-height: 2.4vw;
+  width: 60%;
+  text-align: center;
+  background: linear-gradient(to right, #1c9ce5, #183e9f);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+.services > div {
+  display: flex;
+}
+.services > div > div:nth-child(1) {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3vw;
+  border-radius: 2.3vw;
+  padding: 2.4vw 3vw;
+}
+.services > div > div:nth-child(1) > h2:nth-child(1) {
+  font-size: 3.3vw;
+  line-height: 3.8vw;
+  white-space: nowrap;
+}
+.services > div > div:nth-child(1) > p {
+  font-size: 1.9vw;
+  line-height: 2.7vw;
+}
+.services > div > div:nth-child(1) > a {
+  background: white;
+  font-size: 1.5vw;
+  line-height: 2.3vw;
+  color: black;
+  text-decoration: none;
+  text-transform: capitalize;
+  border-radius: 2.3vw;
+  font-weight: 700;
+  padding: 0.7vw 1.3vw;
+}
+.services > div > div:nth-child(1) > img:nth-child(4) {
+  align-self: flex-end;
+  width: 17vw;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.services > div > div:nth-child(2) {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  transition-delay: 200ms;
+  padding: 2.4vw 3vw;
+  justify-content: space-between;
+}
+.services > div > div:nth-child(2) > img {
+  width: 12vw;
+}
+.services > div > div:nth-child(2) > div {
+  display: flex;
+  flex-direction: column;
+  gap: 3vw;
+}
+.services > div > div:nth-child(2) > div > h2 {
+  font-size: 3.3vw;
+  line-height: 3.8vw;
+  background: linear-gradient(to right, #1c9ce5, #183e9f);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+.services > div > div:nth-child(2) > div > p {
+  font-size: 1.9vw;
+  line-height: 2.7vw;
+  background: linear-gradient(to right, #1c9ce5, #183e9f);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+.services > div > div:nth-child(3) {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 2.4vw 3vw;
+  justify-content: space-between;
+  transform: rotate(5deg);
+  transition-delay: 400ms;
+  transform-origin: top left;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+}
+.services > div > div:nth-child(3) > div {
+  display: flex;
+  flex-direction: column;
+  gap: 3vw;
+}
+.services > div > div:nth-child(3) > div > h2 {
+  font-size: 3.3vw;
+  line-height: 3.8vw;
+  background: linear-gradient(to right, #1c9ce5, #183e9f);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+.services > div > div:nth-child(3) > div > p {
+  font-size: 1.9vw;
+  line-height: 2.7vw;
+  background: linear-gradient(to right, #1c9ce5, #183e9f);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+.services > div > div:nth-child(3) > img {
+  width: 17vw;
+}
+
+.app-banner {
+  display: flex;
+  align-items: center;
+  margin: 2.3vw 5.5vw;
+  padding: 2.3vw 5.5vw;
+  margin-top: 9.7vw;
+  margin-bottom: 9.7vw;
+  gap: 5vw;
+}
+.app-banner > div:nth-child(1) {
+  padding: 2.3vw;
+  background: linear-gradient(to right, #1c9ce5, #183e9f);
+  border-radius: 2.3vw;
+}
+.app-banner > div:nth-child(1) > img {
+  width: 15vw;
+}
+.app-banner > div:nth-child(2) {
+  display: flex;
+  transition-delay: 200ms;
+  flex-direction: column;
+  gap: 3vw;
+}
+.app-banner > div:nth-child(2) > h1 {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 3.3vw;
+  line-height: 3.8vw;
+  text-transform: capitalize;
+  background: linear-gradient(to right, #1c9ce5, #183e9f);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.app-banner > div:nth-child(2) > h1 > img {
+  width: 5vw;
+  margin: 0 1.1vw;
+}
+.app-banner > div:nth-child(2) > p {
+  font-size: 1.9vw;
+  line-height: 3.8vw;
+  color: transparent;
+  background: linear-gradient(to right, #1c9ce5, #183e9f);
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+.app-banner > div:nth-child(2) > a > img {
+  width: 14vw;
+}
+
+.how-it-works {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.3vw;
+  justify-content: space-between;
+  margin: 2.3vw 5.5vw;
+  margin-top: 9.7vw;
+  margin-bottom: 9.7vw;
+  padding: 2.3vw 5.5vw;
+}
+.how-it-works > h1 {
+  font-size: 3.3vw;
+  line-height: 3.8vw;
+  background: linear-gradient(to right, #1c9ce5, #183e9f);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+.how-it-works > div {
+  display: flex;
+  gap: 5vw;
+}
+.how-it-works > div > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3vw;
+  background: #f6f7f2;
+  border-radius: 2.3vw;
+  padding: 2.4vw 3vw;
+}
+.how-it-works > div > div > h2 {
+  font-size: 3.3vw;
+  line-height: 3.8vw;
+  white-space: nowrap;
+  background: linear-gradient(to right, #1c9ce5, #183e9f);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+.how-it-works > div > div > p {
+  font-size: 1.9vw;
+  line-height: 2.7vw;
+  background: linear-gradient(to right, #1c9ce5, #183e9f);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+.how-it-works > div > div > div {
+  align-self: center;
+  padding: 1.3vw;
+  background: white;
+  border-radius: 2.3vw;
+}
+.how-it-works > div > div > div > img {
+  width: 15vw;
+}
+.how-it-works > div > div:nth-child(2) {
+  display: flex;
+  transition-delay: 200ms;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3vw;
+  background: linear-gradient(to right, #1c9ce5, #183e9f);
+  border-radius: 2.3vw;
+  padding: 2.4vw 3vw;
+}
+.how-it-works > div > div:nth-child(2) > h2 {
+  font-size: 3.3vw;
+  line-height: 3.8vw;
+  white-space: nowrap;
+  color: white;
+}
+.how-it-works > div > div:nth-child(2) > p {
+  font-size: 1.9vw;
+  line-height: 2.7vw;
+  color: white;
+}
+.how-it-works > div > div:nth-child(2) > div {
+  align-self: flex-end;
+}
+.how-it-works > div > div:nth-child(2) > div > img {
+  width: 20vw;
+}
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.3vw;
+  margin: 2.3vw 5.5vw;
+  margin-top: 9.7vw;
+  margin-bottom: 9.7vw;
+  padding: 2.3vw 5.5vw;
+}
+.testimonials > h1 {
+  font-size: 3.3vw;
+  line-height: 3.8vw;
+  background: linear-gradient(to right, #1c9ce5, #183e9f);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+.testimonials > div {
+  display: flex;
+  align-items: center;
+  gap: 5vw;
+}
+.testimonials > div > div:nth-child(1) {
+  display: flex;
+  gap: 3vw;
+  position: relative;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.testimonials > div > div:nth-child(1) > div:nth-child(1), .testimonials > div > div:nth-child(1) > div:nth-child(2) {
+  border-radius: 50%;
+  display: flex;
+  overflow: hidden;
+  background: linear-gradient(to right, #1c9ce5, #183e9f);
+  align-items: center;
+  justify-content: center;
+  padding: 1.5vw;
+  width: 30vw;
+  height: 30vw;
+  position: relative;
+}
+.testimonials > div > div:nth-child(1) > div:nth-child(1) > img, .testimonials > div > div:nth-child(1) > div:nth-child(2) > img {
+  position: absolute;
+  bottom: 0%;
+  transition: opacity 0.5s ease;
+  align-self: center;
+  width: 30vw;
+  height: 30vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+.testimonials > div > div:nth-child(1) > div:nth-child(2) {
+  color: white;
+  position: absolute;
+  top: -6%;
+  right: -6%;
+  height: 10vw;
+  width: 10vw;
+}
+.testimonials > div > div:nth-child(1) > div:nth-child(2) > p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.9vw;
+  text-align: center;
+  line-height: 2.7vw;
+}
+.testimonials > div > div:nth-child(1) > div:nth-child(2) > p > span {
+  font-weight: 700;
+}
+.testimonials > div > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  gap: 3vw;
+}
+.testimonials > div > div:nth-child(2) > div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  gap: 3vw;
+}
+.testimonials > div > div:nth-child(2) > div:nth-child(1) > h2 {
+  font-size: 3.3vw;
+  line-height: 3.8vw;
+  white-space: nowrap;
+  transition: opacity 0.5s ease;
+  background: linear-gradient(to right, #1c9ce5, #183e9f);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  text-transform: capitalize;
+}
+.testimonials > div > div:nth-child(2) > div:nth-child(1) > p {
+  background: linear-gradient(to right, #1c9ce5, #183e9f);
+  transition: opacity 0.5s ease;
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  font-size: 1.9vw;
+  line-height: 2.7vw;
+}
+.testimonials > div > div:nth-child(2) > div:nth-child(1) > div > h5 {
+  font-size: 2.3vw;
+  line-height: 2.7vw;
+  background: linear-gradient(to right, #1c9ce5, #183e9f);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  transition: opacity 0.5s ease;
+  text-transform: capitalize;
+}
+.testimonials > div > div:nth-child(2) > div:nth-child(1) > div > p {
+  background: linear-gradient(to right, #1c9ce5, #183e9f);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  transition: opacity 0.5s ease;
+  font-size: 1.9vw;
+  line-height: 2.7vw;
+}
+.testimonials > div > div:nth-child(2) > div:nth-child(2) {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 2.3vw;
+}
+.testimonials > div > div:nth-child(2) > div:nth-child(2) > p {
+  font-size: 1.9vw;
+  line-height: 2.7vw;
+  transition: opacity 0.5s ease;
+  background: linear-gradient(to right, #1c9ce5, #183e9f);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  font-weight: 600;
+}
+.testimonials > div > div:nth-child(2) > div:nth-child(2) > div {
+  display: flex;
+  gap: 1.5vw;
+}
+.testimonials > div > div:nth-child(2) > div:nth-child(2) > div > button {
+  background: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  transition: transform 0.1s;
+}
+.testimonials > div > div:nth-child(2) > div:nth-child(2) > div > button > img {
+  width: 3.5vw;
+}
+.testimonials > div > div:nth-child(2) > div:nth-child(2) > div > button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+.testimonials > div > div:nth-child(2) > div:nth-child(2) > div > button:nth-child(1) > img {
+  rotate: 180deg;
+}
+
+.footer {
+  display: flex;
+  margin-top: 9.7vw;
+  padding: 2.3vw 8.5vw;
+  background: linear-gradient(to right, #1c9ce5, #183e9f);
+}
+.footer > div:nth-child(1) {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 3vw;
+}
+.footer > div:nth-child(1) > div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  gap: 3vw;
+}
+.footer > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}
+.footer > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > img {
+  width: 5vw;
+}
+.footer > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > h1 {
+  color: white;
+  font-size: 2.3vw;
+  line-height: 2.7vw;
+}
+.footer > div:nth-child(1) > div:nth-child(1) > p {
+  font-size: 1.9vw;
+  color: white;
+  line-height: 2.7vw;
+}
+.footer > div:nth-child(1) > div:nth-child(1) > div:nth-child(3) {
+  display: flex;
+  gap: 1vw;
+}
+.footer > div:nth-child(1) > div:nth-child(1) > div:nth-child(3) > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5vw;
+  border-radius: 50%;
+  background: white;
+}
+.footer > div:nth-child(1) > div:nth-child(1) > div:nth-child(3) > a > img {
+  width: 3vw;
+}
+.footer > div:nth-child(1) > div:nth-child(1) > div:nth-child(3) > a:hover {
+  box-shadow: inset 0px 3px 11px 2px rgba(0, 0, 0, 0.5);
+}
+.footer > div:nth-child(1) > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3vw;
+}
+.footer > div:nth-child(1) > div:nth-child(2) > h2 {
+  font-size: 1.8vw;
+  line-height: 2.5vw;
+  color: white;
+  text-transform: capitalize;
+}
+.footer > div:nth-child(1) > div:nth-child(2) > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4vw;
+}
+.footer > div:nth-child(1) > div:nth-child(2) > ul > li {
+  list-style: none;
+}
+.footer > div:nth-child(1) > div:nth-child(2) > ul > li > a {
+  font-size: 1.4vw;
+  line-height: 2vw;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: white;
+}
+.footer > div:nth-child(1) > div:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3vw;
+}
+.footer > div:nth-child(1) > div:nth-child(3) > h2 {
+  font-size: 1.8vw;
+  line-height: 2.5vw;
+  color: white;
+  text-transform: capitalize;
+}
+.footer > div:nth-child(1) > div:nth-child(3) > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4vw;
+}
+.footer > div:nth-child(1) > div:nth-child(3) > ul > li {
+  list-style: none;
+}
+.footer > div:nth-child(1) > div:nth-child(3) > ul > li > a {
+  font-size: 1.4vw;
+  line-height: 2vw;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: white;
+}
+.footer > div:nth-child(1) > div:nth-child(3) > ul > li > a:nth-child(1) {
+  text-transform: none;
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.show {
+  filter: blur(0px);
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+@media (prefer-reduce-motion) {
+  .hidden {
+    transition: none;
+  }
+}/*# sourceMappingURL=index.css.map */
